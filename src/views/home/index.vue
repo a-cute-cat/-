@@ -1,0 +1,28 @@
+<script lang="ts" setup>
+	import HomeBanner from "@/views/home/components/home-banner.vue"
+	import HomeCategory from "@/views/home/components/home-category.vue"
+	import HomeNew from "@/views/home/components/home-new.vue"
+	import HomeHot from "@/views/home/components/home-hot.vue"
+	import HomeBrand from "@/views/home/components/home-brand.vue"
+</script>
+
+<template>
+	<div class="page-home">
+		<div class="home-entry">
+			<div class="container">
+				<!-- 左侧分类 -->
+				<HomeCategory></HomeCategory>
+				<!-- banner轮播图 -->
+				<HomeBanner></HomeBanner>
+			</div>
+			<!-- 新鲜好物 -->
+			<HomeNew></HomeNew>
+			<!-- 人气推荐 -->
+			<HomeHot></HomeHot>
+			<!-- 热卖品牌 -->
+			<HomeBrand></HomeBrand>
+		</div>
+	</div>
+</template>
+
+<style lang="less" scoped></style>
